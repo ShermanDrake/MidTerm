@@ -1,61 +1,87 @@
 
 
-angular.module('voteApp', []);
+angular.module('voteApp', ['ui.bootstrap']);
 angular.module('voteApp');
 angular.module('voteApp').controller('mainController', ['$scope', function($scope){
 
-$scope.submitshow = true;
-$scope.clicked = false;
-$scope.textboxVisible = false;
-$scope.textentryvisible = false;
-$scope.clickcounter = 0
-$scope.textcontent = '';
-$scope.textarea = true;
 
 
-$scope.imageclick = function(event){
-		$scope.clickcounter++
-		if ($scope.clickcounter === 1){
-		$scope.clicked = true;
-		$scope.textboxVisible = true;
-      	$scope.x = event.offsetX; 
-        $scope.y = event.offsetY;
-        $scope.textX = (event.offsetX + 100);}
-
-        
-        }
-
-$scope.submit = function(event){
-	$scope.textboxVisible = true;
-	$scope.submitshow = false;
-	$scope.textentryvisible = true;
-	$scope.textarea = false;
-
-}        
-
-$scope.cancel = function(event){
-	$scope.clickcounter = -1;
-	$scope.clicked = false;
-	$scope.textboxVisible = false;
-	$scope.textcontent = '';
-	$scope.textentryvisible = false;
-	$scope.textarea = true;
-
-
+angular.module('app', ['ui.bootstrap']);
+function CarouselDemoCtrl($scope){
+  $scope.myInterval = 3000;
+  $scope.slides = [
+    {
+      image: 'http://lorempixel.com/400/200/'
+    },
+    {
+      image: 'http://lorempixel.com/400/200/food'
+    },
+    {
+      image: 'http://lorempixel.com/400/200/sports'
+    },
+    {
+      image: 'http://lorempixel.com/400/200/people'
+    }
+  ];
 }
 
-$scope.pointerClick = function(event) {
-		$scope.clicked = false;
-
-        }
-$scope.textbox = function(event) {
-		$scope.textboxVisible = false;
-		$scope.textentryvisible = true;
 
 
-}        
 
-}])
+	
+
+// $scope.submitshow = true;
+// $scope.clicked = false;
+// $scope.textboxVisible = false;
+// $scope.textentryvisible = false;
+// $scope.clickcounter = 0
+// $scope.textcontent = '';
+// $scope.textarea = true;
+
+
+// $scope.imageclick = function(event){
+// 		$scope.clickcounter++
+// 		if ($scope.clickcounter === 1){
+// 		$scope.clicked = true;
+// 		$scope.textboxVisible = true;
+//       	$scope.x = event.offsetX; 
+//         $scope.y = event.offsetY;
+//         $scope.textX = (event.offsetX + 100);}
+
+        
+//         }
+
+// $scope.submit = function(event){
+// 	$scope.textboxVisible = true;
+// 	$scope.submitshow = false;
+// 	$scope.textentryvisible = true;
+// 	$scope.textarea = false;
+
+// }        
+
+// $scope.cancel = function(event){
+// 	$scope.clickcounter = -1;
+// 	$scope.clicked = false;
+// 	$scope.textboxVisible = false;
+// 	$scope.textcontent = '';
+// 	$scope.textentryvisible = false;
+// 	$scope.textarea = true;
+
+
+// }
+
+// $scope.pointerClick = function(event) {
+// 		$scope.clicked = false;
+
+//         }
+// $scope.textbox = function(event) {
+// 		$scope.textboxVisible = false;
+// 		$scope.textentryvisible = true;
+
+
+// }        
+
+// }])
 // $scope.setactiveindex = function($index){
 // 		$scope.activeindex = $index;
 // 	}

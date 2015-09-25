@@ -10,14 +10,28 @@
         <script src="onevote.js" type="text/javascript"></script>
     </head>
 
-      <body ng-controller="mainController">
+    <body ng-controller="mainController">
         <div class="sitecontainer">
           <div class="titlebar">
   	         <h3>...just one vote.</h3>
           </div>
 
+
+      <div ng-controller="CarouselDemoCtrl" id="slides_control">
+        <div>
+            <carousel interval="myInterval">
+              <slide ng-repeat="slide in slides" active="slide.active">
+                <img ng-src="{{slide.image}}">
+                  <div class="carousel-caption">
+                      <h4>Slide {{$index+1}}</h4>
+                  </div>
+              </slide>
+            </carousel>
+        </div>
+      </div>
+        </div>  
           <div class="article image overlay"></div>
         </div>
-  </body>
+    </body>
 
 </html>
