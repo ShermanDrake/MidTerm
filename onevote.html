@@ -20,8 +20,7 @@
           <nav class="navbar navbar-default">
             <div class="container-fluid">
               <div class="navbar-header">
-                <a class="navbar-brand" href="http://glyphicons.com/">
-                  <span class="glyphicon glyphicon-check" aria-hidden="true"></span>
+                <a class="navbar-brand" href="/Users/student/projects/MidTerm/images/vote_b&w.jpg">
                 </a>
               </div>
             </div>
@@ -30,8 +29,8 @@
 
 <!-- Carousel and graphic and button-->
  
-        <div class="front" ng-class="{'flip' : ballot }">
-        <div id="text-carousel" class="carousel slide" ng-hide="ballot" data-ride="carousel">
+        <div class="front" ng-hide="ballot">
+        <div id="text-carousel" class="carousel slide"  data-ride="carousel">
             <!-- Wrapper for slides -->
             <div class="row">
                 <div class="col-xs-offset-3 col-xs-6">
@@ -57,6 +56,13 @@
                                 </div>
                             </div>
                         </div>
+                        <div class="item">
+                            <div class="carousel-content">
+                                <div>                          
+                                    <p>"I never voted for anybody. I always voted against."<strong>W.C. Fields</strong></p>
+                                </div>
+                            </div>
+                        </div>
                 
                     </div>
                 </div>
@@ -71,14 +77,14 @@
 
 <!--         bottom graphic and button -->
 
-          <div id="ballot" ng-hide="ballot">            
-            <div class="front">
+          <div id="ballot">           
+            <div class="">
                 <form class="form-inline">
 
                     <div class="form-group">
                       <div class="">
                         <div class="article image overlay">
-                            <div class="verify-on-top">
+                            <div class="verify-on-top" class="verify-button">
                               <label for="exampleInputName2">Enter Verification Code</label>
                               <input type="text" class="form-control" id="exampleInputName1" placeholder="ABC123">
                               <button type="submit" ng-click="flip()"class="btn btn-default">Verify Code</button>
@@ -98,8 +104,8 @@
 
 <!-- ballot -->
 
-<div class="back" ng-class="{'flip' : ballot }">
-          <div id="ballot" ng-show="ballot">
+      <div class="back" ng-show="ballot">
+          <div id="ballot" >
             <div class="ballot-item">
 <!--               <div class="front">
                 <button type="submit" class="btn btn-default">Verify Code</button>
@@ -107,31 +113,31 @@
 
               <div class="">
                 <div class="container-fluid">
-                <div class="row">
-                    <h3>Vote for your favorite President and Vice President</h3>
-                    <p> 
-                      <button type="button" class="btn btn-default col-lg-6">George Washington / John Adams</button>
-                      <button type="button" class="btn btn-default col-lg-6">John Adams / Thomas Jefferson</button>
-                      <button type="button" class="btn btn-default col-lg-6">Thomas Jefferson / Aaron Burr</button>
-                      <button type="button" class="btn btn-default col-lg-6">James Madison / George Clinton</button>
-                      <button type="button" class="btn btn-default col-lg-6">James Monroe / Daniel Tompkins</button>
-                      <button type="button" class="btn btn-default col-lg-6">John Quincy Adams / John Calhoun</button>
-                      <button type="button" class="btn btn-default col-lg-6">Andrew Jackson / John Calhoun</button>
-                      <button type="button" class="btn btn-default col-lg-6">Martin Van Buren / Richard Johnson</button>
-                      <button type="button" class="btn btn-default col-lg-6">William Henry Harrison / John Tyler</button>
-                      <button type="button" class="btn btn-default col-lg-6">John Tyler / None</button>
-                      <button type="button" class="btn btn-default col-lg-6">James Knox Polk / George Dallas</button>
-                      <button type="button" class="btn btn-default col-lg-6">Zachary Taylor / Millard fillmore</button>
-                      <button type="button" class="btn btn-default col-lg-6">Millard fillmore / None</button>
-                      <button type="button" class="btn btn-default col-lg-6">Franklin Pierce / William King</button>
-                      <button type="button" class="btn btn-default col-lg-6">James Buchanan / John Breckinridge</button>
-                      <button type="button" class="btn btn-default col-lg-6">Abraham Lincoln / Hannibel Hamlin</button>
-                      <button type="submit" ng-click="flip()"class="btn btn-default">Submit</button>
-                    </p>
-              </div>
-             </div> 
-          </div>
+                  <div class="row">
+                      <h3>Vote for your favorite President and Vice President</h3>
 
+                      <p>
+                        <button type="button" class="btn btn-default col-lg-6">George Washington / John Adams</button>
+                        <button type="button" class="btn btn-default col-lg-6">John Adams / Thomas Jefferson</button>
+                        <button type="button" class="btn btn-default col-lg-6">Thomas Jefferson / Aaron Burr</button>
+                        <button type="button" class="btn btn-default col-lg-6">James Madison / George Clinton</button>
+                        <button type="button" class="btn btn-default col-lg-6">James Monroe / Daniel Tompkins</button>
+                        <button type="button" class="btn btn-default col-lg-6">John Quincy Adams / John Calhoun</button>
+                        <button type="button" class="btn btn-default col-lg-6">Andrew Jackson / John Calhoun</button>
+                        <button type="button" class="btn btn-default col-lg-6">Martin Van Buren / Richard Johnson</button>
+                        <button type="button" class="btn btn-default col-lg-6">William Henry Harrison / John Tyler</button>
+                        <button type="button" class="btn btn-default col-lg-6">John Tyler / None</button>
+                        <button type="button" class="btn btn-default col-lg-6">James Knox Polk / George Dallas</button>
+                        <button type="button" class="btn btn-default col-lg-6">Zachary Taylor / Millard fillmore</button>
+                        <button type="button" class="btn btn-default col-lg-6">Millard fillmore / None</button>
+                        <button type="button" class="btn btn-default col-lg-6">Franklin Pierce / William King</button>
+                        <button type="button" class="btn btn-default col-lg-6">James Buchanan / John Breckinridge</button>
+                        <button type="button" class="btn btn-default col-lg-6">Abraham Lincoln / Hannibel Hamlin</button>
+                        <button type="submit" ng-click="flip()" class="btn btn-default">Submit</button>
+                      </p>
+                  </div>
+                </div> 
+              </div>
           </div>
 
          </div> 
@@ -144,6 +150,9 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.5/js/bootstrap.js"type="text/javascript"></script>
         <script src="onevote.js" type="text/javascript"></script>
 
+      </div>
     </body>
 
 </html>
+
+
