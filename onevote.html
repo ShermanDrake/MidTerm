@@ -30,6 +30,7 @@
 
 <!-- Carousel -->
           
+        <div class="front">
         <div id="text-carousel" class="carousel slide" data-ride="carousel">
             <!-- Wrapper for slides -->
             <div class="row">
@@ -66,36 +67,41 @@
           <a class="right carousel-control" href="#text-carousel" data-slide="next">
             <span class="glyphicon glyphicon-chevron-right"></span>
           </a>
-
+        </div>
         </div>
 
  
 
         <!-- Bottom Graphic Submit Button -->
 
-          <div>
-              <form class="form-inline">
+          <div id="ballot" ng-hide="ballot">            
+            <div class="front">
+                <form class="form-inline">
 
-                  <div class="form-group">
-                    <div class="article image overlay">
-                        <div class="verify-on-top">
-                          <label for="exampleInputName2">Enter Verification Code</label>
-                          <input type="text" class="form-control" id="exampleInputName1" placeholder="ABC123">
-                          <button type="submit" class="btn btn-default">Verify Code</button>
+                    <div class="form-group">
+                      <div class="front">
+                        <div class="article image overlay">
+                            <div class="verify-on-top">
+                              <label for="exampleInputName2">Enter Verification Code</label>
+                              <input type="text" class="form-control" id="exampleInputName1" placeholder="ABC123">
+                              <button type="submit" ng-click="flip()"class="btn btn-default">Verify Code</button>
+                            </div>
+
                         </div>
+                      </div> 
 
-                    </div>  
+                    </div>
 
-                  </div>
-
-              </form>
+                </form>
+            </div>
           </div>
 
-          <div id="ballot">
+          <div id="ballot" ng-show="ballot">
             <div class="ballot-item">
-              <div class="front">
-                <!-- button type="submit" class="btn btn-default">Verify Code</button> -->
-              </div>
+<!--               <div class="front">
+                <button type="submit" class="btn btn-default">Verify Code</button>
+              </div> -->
+
               <div class="back">
                     <h3>Vote for your favorite President and Vice President</h3>
                     <p> 
@@ -114,6 +120,10 @@
                       <button type="button" class="btn btn-default col-lg-5">Millard fillmore / None</button>
                       <button type="button" class="btn btn-default col-lg-5">Franklin Pierce / William King</button>
                       <button type="button" class="btn btn-default col-lg-5">James Buchanan / John Breckinridge</button>
+                    </p> 
+
+                    <p>
+                      <button type="submit" ng-click="flip()"class="btn btn-default">Submit</button>
                     </p>
               </div>
           </div>
