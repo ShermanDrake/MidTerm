@@ -1,20 +1,15 @@
 
 
-angular.module('voteApp', []);
+angular.module('voteApp', ['ngAnimate']);
 angular.module('voteApp');
 angular.module('voteApp').controller('mainController', ['$scope', function($scope){
 
   $scope.ballot = false;
-$scope.sitefront = true;
+// $scope.sitefront = true;
 
 
 $scope.flip = function() {
   $scope.ballot = !$scope.ballot;
-}
-
-$scope.flop = function() {
-  $scope.sitefront = !$scope.sitefront;
-
 }
 
 

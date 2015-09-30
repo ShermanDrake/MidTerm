@@ -75,22 +75,21 @@ h3 {
 .front {
   position: relative;
  
-  transition:transform 0.5s;
+  transition:transform 0.8s;
   backface-visibility: hidden;
 }
 .back {
   position: relative;
-  bottom: 200px;
 
   transform: rotateY(180deg);
-  transition:transform 0.5s;
+  transition:transform 0.8s;
 }
 
-.ballot-item:hover .front{
+.front.flip{
 transform: rotateY(180deg);
 }
 
-.ballot-item:hover .back{
+.back.flip{
 transform: rotateY(0deg);
 }
 
