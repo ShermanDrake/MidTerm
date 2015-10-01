@@ -4,17 +4,15 @@
 	margin:0 auto;
 }
 
-.titlebar{
-	width:100%;
-	position: relative;
-	color: white;
-	font-size: 12px;
-/*	font-weight: .5;*/
-/*	text-align: center;*/
-	background-color: rgb(77, 77, 77);
+.navBarSize{
+  width:60vw;
+  position: static;
+  margin:0 auto;
+  background: transparent;
 
 }
 
+/*Flag Image and Verify Button*/
 
 .article {
   width:60vw;
@@ -44,17 +42,17 @@
 
 .verify-on-top {
     color: white;
-    position: fixed;
+    position: absolute;
     z-index: 1;
     text-align: center;
-    padding: 150px 100px 0px;
+    padding: 100px 100px 0px;
+
 
 }
 
-/*.verify-button {
-    position: center;
 
-}*/
+/*
+Carousel*/
 
 .carousel-body {
   background-color: #333333;

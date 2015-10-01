@@ -5,7 +5,7 @@ angular.module('voteApp');
 angular.module('voteApp').controller('mainController', ['$scope', function($scope){
 
   $scope.ballot = false;
-// $scope.sitefront = true;
+
 
 
 $scope.flip = function() {
@@ -14,9 +14,11 @@ $scope.flip = function() {
 
 
 
+
+
 }])
 
-
+// ng-model
 
 // <div id="beach-toys">
   
