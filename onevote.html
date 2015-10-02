@@ -133,7 +133,7 @@
                             <div class="verify-on-top" class="verify-button">
                               <label for="exampleInputName2">Enter Verification Code</label>
                               <input type="text" class="form-control" id="exampleInputName1" placeholder="ABC123">
-                              <button type="submit" ng-click="flip()"class="btn btn-default">Verify Code</button>
+                              <button type="submit" ng-click="flip()" class="btn btn-default">Verify Code</button>
                             </div>
 
                         </div>
@@ -232,7 +232,15 @@
                           <input type="checkbox">Abraham Lincoln / Hannibel Hamlin
                         </label> -->
 
-                        <button type="submit" ng-click="flip()" class="btn btn-default">Submit</button>
+                        <button onclick="myFunction()">Submit</button>
+
+                        <script>
+                        function myFunction() {
+                            alert("I Voted!");
+                        }
+                        </script>
+
+                        <button type="submit" ng-click="flip()" class="btn btn-default">Home Page</button>
                       </p>
                   </div>
                 </div> 
